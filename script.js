@@ -15,14 +15,14 @@ form.addEventListener('submit', function (e) {
 
   /*
   1. Necesito el DOM de los elementos con los que voy a interactuar
-    Boton -> button
     Input -> #weight
              #height
     Div ->   #results 
     
-  2. Función con un addListener asociado al boton, que al invocarlo
-     recoja el valor dentro de los input, los pase a numero, haga la operacion 
+  2. Recojo el valor dentro de los input, haga la operacion y empleo toFixed() que devuelve dos decimales 
      const imc = weight / ((height * height) / 10000);  y su resultado(imc) lo escriba en el div
+
+  3. Dependiendo del imc, los diferentes textos se van coloreando dependiendo del valor.
   */
   
   let pesoIMC = document.querySelector("#weight");
